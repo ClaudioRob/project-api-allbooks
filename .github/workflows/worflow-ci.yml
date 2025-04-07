@@ -19,5 +19,4 @@ jobs:
       with:
         node-version: 18.
     - run: npm install -g json-server
-    - run: npm run start
     - run: npm test

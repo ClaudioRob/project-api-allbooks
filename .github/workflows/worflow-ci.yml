@@ -18,6 +18,5 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 18.
-    - run: npm install -g json-server
-    - run: npm run start
+    - run: npm install json-server --save-dev
     - run: npm test

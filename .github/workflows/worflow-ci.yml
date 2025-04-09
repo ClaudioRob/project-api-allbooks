@@ -13,10 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js
-      uses: actions/setup-node@v4
+    - uses: actions/checkout@v3
+    - name: Using Node.js
+      uses: actions/setup-node@v3
       with:
-        node-version: 18.
-    - run: npm install json-server --save-dev
-    - run: npm run test
+        node-version: 18.x
+    - name: run npm install, build and test
+      run: 
+        npm install
+        npm run build
+        npm run test
